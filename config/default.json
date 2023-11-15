@@ -1,0 +1,25 @@
+{
+    "server": {
+        "port": {
+            "https": 443,
+            "http": 80
+        },
+        "tls": {
+            "key": null,
+            "cert": null,
+            "keyPath": "./meta/certs/key.pem",
+            "certPath": "./meta/certs/cert.pem"
+        }
+    },
+    "ecr": {
+        "registry": null,
+        "repositoryPolicyText": null
+    },
+    "job": {
+        "namespace": "privatize",
+        "image": "blackbirdcloud/image-syncer:0.0.1",
+        "backoffLimit": 1,
+        "completion": 2,
+        "serviceAccountName": "privatize"
+    }
+}

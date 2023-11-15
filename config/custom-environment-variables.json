@@ -1,0 +1,37 @@
+{
+    "server": {
+        "port": {
+            "http": {
+                "__name": "SERVER_HTTP_PORT",
+                "__format": "number"
+            },
+            "https": {
+                "__name": "SERVER_HTTPS_PORT",
+                "__format": "number"
+            }
+        },
+        "tls": {
+            "keyPath": "SERVER_TLS_KEY_PATH",
+            "certPath": "SERVER_TLS_CERT_PATH",
+            "key": "SERVER_TLS_KEY",
+            "cert": "SERVER_TLS_CERT"
+        }
+    },
+    "ecr": {
+        "registry": "ECR_REGISTRY",
+        "repositoryPolicyText": "ECR_REPOSITORY_POLICY_TEXT"
+    },
+    "job": {
+        "namespace": "COPY_JOB_NAMESPACE",
+        "image": "COPY_JOB_IMAGE",
+        "serviceAccountName": "COPY_JOB_SERVICE_ACCOUNT_NAME",
+        "backoffLimit": {
+            "__name": "COPY_JOB_BACKOFF_LIMIT",
+            "__format": "number"
+        },
+        "completion": {
+            "__name": "COPY_JOB_COMPLETION",
+            "__format": "number"
+        }
+    }
+}

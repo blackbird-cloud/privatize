@@ -1,0 +1,6 @@
+*
+!./src
+!./meta/certs
+!package-lock.json
+!package.json
+!config
