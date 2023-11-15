@@ -8,7 +8,7 @@ image:
   repository: privatize
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: main-463e248da7c8dbbc38ca4d05a08700c3567da1eb
+  tag: "0.0.1"
 
 imagePullSecrets: []
 nameOverride: ""
